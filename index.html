@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Jenil Jain</h1>
+            <h2>Software Engineer | Data Scientist</h2>
+            <a href="/Users/jeniljain/Downloads/devportfolio-master/Resume_Jenil_Jain.pdf" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Pursuing Masters in Computer Science specializing in Machine Learning from Rutgers University, New Brunswick. Bachelor's in Computer Engineering from Thadomal Shahani Engineering College - Class of 2021. Passionate about Machine Learning and Data Analytics. Proficient in Python with skills in Databases.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="January 2022 – Present">
+                <h3>Rutgers University - Behavioural Informatics Lab</h3>
+                <h4>Graduate Research Assistant</h4>
+                <p>
+                    Analyzed impact of Covid-19 on mental health and wellbeing of over 100 users for a period of 10 weeks based on Google Maps search history. Preprocessed and visualized data with 15+ plots to study interconnections recorded on digital devices with numpy, pandas, seaborn and matplotlib
+                </p>
+            </div>
+
+            <div data-date="June 2022 – August 2022">
+                <h3>ADP</h3>
+                <h4>Application Developer Intern</h4>
+                <p>
+                    Preprocessed more than 8 billion records using PySpark to predict employee 401k contributions facilitating employers and client resources. Reduced average error rate to less than 10% for predicted contributions by adding a clustering model to previous architecture. Tested 3 different approaches with models viz Decision Trees, XGBoost, Neural Networks and devised time series forecasting models ARIMA, SARIMA, Facebook Prophet to sense seasonality in data.
+                </p>
+            </div>
+
+            <div data-date="December 2019 – January 2020">
+                <h3>Sahu Technologies</h3>
+                <h4>Software Developer Intern</h4>
+                <p>
+                    Increased average website engagement by 1.5x by modeling from client’s standpoint. Fashioned an interactive user interface for an e-commerce website as a part of a full-stack project with Bootstrap. Designed SQL queries to correlate data and reduced query response time by 10 seconds.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Rutgers, The State University of New Jersey</h3>
+            <span class="education-date">Aug 2021 - May 2023</span>
+            <h4>Master of Science in Computer Science - Machine Learning; GPA: 3.91/4</h4>
+            <p>
+                Courses: Introduction to Artificial Intelligence, Mathematical Foundations for Data Science, Data Structures and Algorithms, Machine Learning, Massive Data Mining, Databases for Data Science 
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>Thadomal Shahani Engineering College - University of Mumbai</h3>
+            <span class="education-date">Aug 2017 - June 2021</span>
+            <h4>Bachelor of Engineering in Computer Engineering; GPA: 9.14/10</h4>
+            <p>
+                Courses: Data Structures, Analysis of Algorithms, Advanced Algorithms, Operating Systems, Computer Networks, Database Management System, Software Engineering
+            </p>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/videotext.jpeg" width="300" height="300" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Video-Text Representational Learning</h3>
+                        <p>
+                            Performed video to text retrieval and vice-versa along with aligned semantics for over 2000 long untrimmed videos and 89 cooking recipes. Extracted text features using ResNet along with BERT for video and modeled a hierarchical cooperative transformer to capture 3 levels of hierarchy. Achieved recall rate@10 of 0.978 and median rank of 2.2 over test set of 457 videos.
+                        </p>
+                        <a href="https://github.com/jeniljain358/Video-Text-Representational-Learning">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/imitation.png" width="300" height="300" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>The Imitation Game</h3>
+                        <p>
+                            Built 2 ML agents with different neural network architectures to mimic path taken by A* search algorithm in a grid world. Attained an accuracy of 92.5% with first agent using dense layers, the second agent with CNN acquired 90% accuracy. Accounted for a solvability ratio of 0.6 for 3000 solvable grids within an average time frame of 3.5 seconds per grid.
+                        </p>
+                        <a href="https://github.com/jeniljain358/The-Imitation-Game">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/medicard.jpg" width="300" height="300" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Medicard - Transforming Healthcare in Every Direction</h3>
+                        <p>
+                            Trained a disease prediction system employing Decision Trees yielding 93% accuracy rate. Outlined a progressive web app with an accessibility score of 97 to foretell doctors about patients’ medical history. Incorporated MVC design architecture and built backend server as a RESTful API with MERN stack to enrich user experience.
+                        </p>
+                        <a href="https://github.com/jeniljain358/Medicard---Transforming-Healthcare-in-Every-Direction">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/fraud.png" width="300" height="300"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Credit Card Fraud Detection using Hybrid Approach</h3>
+                        <p>
+                            Trained a hybrid model of Self Organizing Maps and Artificial Neural Networks obtaining an accuracy rate of 94.49%. Improved upon previous algorithms' accuracy rate by 10% and incorporated in a Django website for banks. Presented the idea in Smart India Hackathon, a national level hackathon amongst 2000+ colleges and 5000+ teams. Published a research paper explaining the hybrid approach in volume 7 of the International Research Journal of Engineering and Technology (IRJET).
+                        </p>
+                        <a href="https://github.com/jeniljain358/Credit-Card-Fraud-Detection">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Pyspark</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>Databricks</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>PHP</li>
+            <li>Sckit-learn</li>
+            <li>NLTK</li>
+            <li>Tensorflow</li>
+            <li>Keras</li>
+            <li>Django</li>
+            <li>Flask</li>
+            <li>Hadoop</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>MongoDB</li>
+            <li>AWS</li>
+            <li>SQL</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/f/mdojaeby">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2022</span> JENIL JAIN
+                    </p>
+                </div>
+                <div class="col-sm-2 top">  
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/jeniljain358" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/jeniljain358/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/jenil.jain.3158" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
